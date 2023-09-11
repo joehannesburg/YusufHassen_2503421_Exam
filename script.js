@@ -58,3 +58,4 @@ navLinks.forEach((link) => {
     window.location.href = targetUrl;
   });
 });
+

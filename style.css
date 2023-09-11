@@ -64,8 +64,8 @@ nav{
   position: fixed;
   top: 0;
   background-color: rgba(238, 238, 238, 0.6);
-  border-radius: 10px;
-  height: 50px;
+  border-radius: 2px;
+  height: 55px;
   width: 100%;
 }
 
@@ -84,7 +84,7 @@ padding: 0;
 
 nav ul li{
   display: inline-block;
-  line-height: 60px;
+  line-height: 55px;
   margin: 0 5px;
 }
 nav ul li a{
@@ -100,7 +100,7 @@ nav ul li a.active,a:hover{
   color: #000101;
   transition: .5s;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .checkbtn{
   font-size: 30px;
@@ -340,7 +340,7 @@ main.index-page-main {
       
       .accordion {
         max-width: 90em;
-        width: 85%;
+        width: 75%;
         background: rgba(255, 255, 255, 0.3) ;
         margin: 0 auto;
         
@@ -390,7 +390,7 @@ main.index-page-main {
       .accordion-content .description {
         height: 0;
         font-size: 1.1em;
-        color: #333;
+        color: #000000;
         font-weight: 400;
         padding: 0 1.5em;
         transition: all 0.2s linear;
@@ -415,7 +415,7 @@ main.index-page-main {
       }
   
       .IxD {
-        width: 90vw;
+        width: 70vw;
         color: #000101;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(195, 195, 195, 0.6));
         border: #000101;
@@ -433,7 +433,7 @@ main.index-page-main {
       }
   
       .IxD-content {
-        width: 80vw;
+        width: 65vw;
         padding-left: 3vw;
       }
   
@@ -481,7 +481,7 @@ main.index-page-main {
         }
   
         .wireframes {
-          width: 90vw;
+          width: 70vw;
         color: #000101;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(195, 195, 195, 0.6));
         border: #000101;
@@ -498,7 +498,7 @@ main.index-page-main {
         }
   
         .wireframe-content{
-          width: 80vw;
+          width: 65vw;
         padding-left: 3vw;
         }
   
@@ -507,8 +507,8 @@ main.index-page-main {
         }
   
         .wireframe-content img {
-          margin-left: 7vw;
-          width: 40%
+          margin-left: 12vw;
+          width: 60%
           
         }
   
@@ -546,45 +546,76 @@ main.index-page-main {
 section.section1 {
   
     color: rgb(255, 255, 255);
-    text-align: left;
-    margin-left: 5vw;
-    margin-top: 15vh;
-  
+    text-align: center;
+    /* width: 100%; */
     overflow-x: hidden;
   
   }
   
     section.section1 h1 {
+      /* display: inline-block;
+      /* text-align: center; */
       margin-top: 15vh;
-      font-size: 2.8em;
+      font-size: 3.5em;
       color: #ffffff;
-      max-width: 60vw;
+      /* max-width: 60vw;  */
+      
     }
     
   
     section.section1 h2{
-      color: rgb(123, 123, 123);
-      font-size: 2.3em;
-      margin-top: -2vh;
-      max-width: 58vw;
+     
+
+      color: rgb(115, 112, 112);
+      font-size: 1.5em;
+      margin-top: -6vh;
+      
     }
   
     section.section1 p{
       color: rgb(255, 255, 255);
-      font-size: 1.5em;
+      font-size: 1.4em;
       margin-top: -1vh;
-      margin-left: .25vw;
-      max-width: 50vw;
+     margin: 0 auto;
+     max-width: 50vw;
+     font-family: sans-serif;
+      
       
     }
   
-    img.asteroid1{
-      margin-top: -50vh;
-     margin-right: 5vw;
-      float: right;
-      width: 22%; 
-      animation: rotate 10s linear infinite;
-     
+    #scatter-plot {
+      margin-top: 4vh;
+    }
+    
+    
+    image{
+      
+        
+        opacity: 0.95;
+      
+    }
+   
+    text {
+      font-family: sans-serif;
+    }
+    
+    .tick text {
+      font-size: 1.5em;
+      fill: #ffffff;
+    }
+    
+    .tick line {
+      stroke: #ffffff;
+    }
+    
+    .axis-label {
+      font-size: 2em;
+      fill: #ffffff;
+    }
+    
+    .title {
+      font-size: 2em;
+      fill: #ffffff;
     }
 
     @keyframes rotate {
@@ -597,58 +628,7 @@ section.section1 {
         }
     }
 
-    section.section2 {
   
-        color: rgb(255, 255, 255);
-        text-align: right;
-        margin-right: -5vw;
-        margin-top: 25vh;
-        float: right;
-      
-        overflow-x: hidden;
-      
-      }
-      
-        .section2 h1 {
-          margin-top: 15vh;
-          font-size: 2.8em;
-          color: #ffffff;
-          max-width: 60vw;
-        }
-        
-      
-        .section2 h2{
-          color: rgb(123, 123, 123);
-          font-size: 2.3em;
-          margin-top: -2vh;
-          max-width: 58vw;
-        }
-      
-        .section2 p{
-          color: rgb(255, 255, 255);
-          font-size: 1.5em;
-          margin-top: -1vh;
-          margin-right: 20vw;
-          max-width: 50vw;
-          
-        }
-      
-        img.asteroid2{
-          margin-top: -50vh;
-         margin-right: 1vw;
-          float: left;
-          width: 22%; 
-          animation: rotate 10s linear infinite;
-         
-        }
-    /* img.asteroid-belt{
-        margin-top: -40vh;
-       margin-right: 15vw;
-        float: right;
-        width: 35%; 
-        
-       
-      } */
     
     
     @media (max-width: 952px){
@@ -694,3 +674,80 @@ section.section1 {
      
       }
      
+
+      #section2 {
+
+        margin-top: 6vh;
+  
+        color: rgb(255, 255, 255);
+        text-align: center;
+        /* width: 100%; */
+        overflow-x: hidden;
+      
+      }
+      
+        #section2 h1 {
+          /* display: inline-block;
+          /* text-align: center; */
+          margin-top: 15vh;
+          font-size: 3.5em;
+          color: #ffffff;
+          /* max-width: 60vw;  */
+          
+        }
+        
+      
+        #section2 h2{
+         
+    
+          color: rgb(115, 112, 112);
+         font-size: 1.8em;
+          margin-top: 2vh;
+          
+        }
+      
+        #section2 p{
+          color: rgb(255, 255, 255);
+          font-size: 1.4em;
+          margin-top: -1vh;
+         margin: 0 auto;
+         max-width: 50vw;
+         font-family: sans-serif;
+          
+          
+        }
+      
+        #histogram {
+          margin-top: 12vh;
+        }
+        
+        
+        image{
+          
+            
+            opacity: 0.95;
+          
+        }
+
+        text {
+          font-family: sans-serif;
+        }
+        
+        .tick text {
+          font-size: 1.5em;
+          fill: #ffffff;
+        }
+        
+        .tick line {
+          stroke: #ffffff;
+        }
+        
+        .axis-label {
+          font-size: 2em;
+          fill: #ffffff;
+        }
+        
+        .title {
+          font-size: 2em;
+          fill: #ffffff;
+        }

@@ -11,7 +11,9 @@
 
     <title>Data-Visualisation</title>
     <link rel="stylesheet" href="style.css">
+   
     <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <link rel="shortcut icon" href="./Images/space.png" type="image/x-icon">
 </head>
@@ -35,32 +37,49 @@
   </nav>
   <main class="data-vis-page-main h-entry" >
    <section class="section1">
-    <h1 class="p-name">Lorem Ipsum</h1>
-    <h2 class="p-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, libero!  </h2>
+    <h1 class="p-name">Asteroids</h1>
+    <h2 class="p-title">A Cosmic Wonder Hidden In Plain Sight </h2>
 
-    <p class="p-summary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ab qui neque, provident voluptas possimus sint nemo totam. Libero deleniti accusantium neque hic explicabo aperiam fugit quam accusamus recusandae modi!</p>
-     <p class="p-summary"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae provident quisquam, consectetur tenetur aspernatur necessitatibus atque temporibus magni, aperiam ex voluptate commodi reprehenderit alias dignissimos ipsum voluptatum delectus doloribus debitis!   </p>
+    <p class="p-summary">Asteroids, those enigmatic space rocks, have long captured the imagination of both scientists and curious minds alike. These celestial bodies, remnants of the early solar system, are scattered throughout our cosmic neighborhood. But have you ever wondered just how big they are and how close they come to Earth?</p>
+     <p class="p-summary"> In the below scatter-plot graph, you can get some sort of understanding as to how close they are to Earth, and how big they are.    </p>
+     <p class="p-summary"> With the use of the NASA API, we are able to view the most recent and up-to-date data of these spectacular blobs of stone floating in space.</p>
 
-    <img src="./Images/pngwing.com (1).png" alt="asteroid-img" class="asteroid1">
+    <!-- <img src="./Images/pngwing.com (1).png" alt="asteroid-img" class="asteroid1"> -->
 
    </section>
-   <section class="section2">
+   <section id="scatter-plot">
 
-    <h1 class="p-name">Lorem Ipsum</h1>
-    <h2 class="p-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, libero!  </h2>
-
-    <p class="p-summary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ab qui neque, provident voluptas possimus sint nemo totam. Libero deleniti accusantium neque hic explicabo aperiam fugit quam accusamus recusandae modi!</p>
-     <p class="p-summary"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae provident quisquam, consectetur tenetur aspernatur necessitatibus atque temporibus magni, aperiam ex voluptate commodi reprehenderit alias dignissimos ipsum voluptatum delectus doloribus debitis!   </p>
-
-    <img src="./Images/pngwing.com (1).png" alt="asteroid-img" class="asteroid2">
-
-  </section>
-
+    <svg id="svg1" width="1100" height="700"></svg> 
     
+   </section>
+   
+
+   <section id="section2">
+    
+    
+      <h2 class="p-title">How Big Is It? </h2>
+
+      <p class="p-summary">Asteroids vary widely in size, ranging from tiny pebbles to colossal space rocks. The smallest asteroids, often referred to as "meteoroids," can be as small as a grain of sand, while the largest ones, known as "planetesimals," can be hundreds of kilometers in diameter. The majority of asteroids fall somewhere in between, with diameters ranging from a few meters to tens of kilometers. These diverse sizes play a crucial role in understanding the potential impact hazards and the geological history of our solar system.</p>
+       <p class="p-summary"> In the below histogram, we can gain an understanding of the sizes of these asteroids.    </p>
+      
+
+      </section>
+    
+      <section id="histogram">
+        <svg id="svg2" width="1100" height="700"></svg>
+
+      </section>
+    
+
+   
+   
     <!-- <img src="./Images/Picsart_23-04-19_10-39-59-112.png" alt="SelfieImg" class="selfie-img" class="u-photo"> -->
   
   </main>
 
+
+  <script src="script.js"></script>
+  <script src="api.js"></script>
  
     
 </body>

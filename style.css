@@ -96,9 +96,16 @@ nav ul li a{
   text-decoration: none;
   font-weight: bold;
 }
-nav ul li a.active,a:hover{
+nav ul li a:hover{
   color: #000101;
   transition: .5s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+nav ul li a.active {
+  color: #000101;
+  /* transition: .5s; */
   background-color: rgb(255, 255, 255);
   border-radius: 50px;
 }
@@ -352,7 +359,7 @@ main.index-page-main {
       .accordion .accordion-content {
         margin: 1em 0;
         border-radius: 0.4em;
-        background: linear-gradient(135deg, rgba(132, 132, 132, 0.7), rgba(231, 231, 231, 0.7));
+        background: linear-gradient(135deg, rgba(163, 163, 163, 0.7), rgba(231, 231, 231, 0.7));
         border: 0.1em solid #000000;
         overflow: hidden;
       }
@@ -384,7 +391,7 @@ main.index-page-main {
       
       .accordion-content header i {
         font-size: 1.5em;
-        color: #ffffff;
+        color: #000000;
       }
       
       .accordion-content .description {
@@ -403,6 +410,47 @@ main.index-page-main {
         margin-left: 25%;
     }
 
+
+    #asteroidsImg{
+
+      
+        margin-top: 7vh;
+       
+       
+        margin-left: 10%;
+        width: 80%; 
+        /* animation: rotate 10s linear infinite; */
+       
+      }
+  
+
+      @media (max-width: 952px){
+  
+       #asteroidsImg{
+          width: 60%
+        }
+    
+      }
+    
+      @media (max-width: 526px){
+    
+        #asteroidsImg{
+          
+          width: 40%
+        }
+    
+      }
+      /* @keyframes rotate {
+          0% {
+              transform: rotate(0deg);
+          }
+  
+          100% {
+              transform: rotate(360deg);
+          }
+      } */
+    
+
      /* Styling for Design Page */
 
      .main-header {
@@ -413,6 +461,13 @@ main.index-page-main {
         margin-top: 10vh;
         color: white;
       }
+
+      #astro_img1{
+        width: 7%;
+        margin-left: 25%;
+        margin-top: -10vh;
+      }
+
   
       .IxD {
         width: 70vw;
@@ -543,7 +598,7 @@ main.index-page-main {
 
         /* Main Text Styling Data-Vis Page*/
 
-section.section1 {
+#section1 {
   
     color: rgb(255, 255, 255);
     text-align: center;
@@ -551,8 +606,18 @@ section.section1 {
     overflow-x: hidden;
   
   }
+
+  #section1 article{
+    float: left;
+    width: 40%;
+    padding: 0 20px;
+    /* box-sizing: border-box; */
+    margin-top: 16vh;
+  }
+
   
-    section.section1 h1 {
+  
+     #section1 h1 {
       /* display: inline-block;
       /* text-align: center; */
       margin-top: 15vh;
@@ -563,28 +628,33 @@ section.section1 {
     }
     
   
-    section.section1 h2{
+     #section1 h2{
      
 
       color: rgb(115, 112, 112);
-      font-size: 1.5em;
-      margin-top: -6vh;
+      font-size: 1.8em;
+      margin-top: -4vh;
       
     }
   
-    section.section1 p{
+    #section1 p{
       color: rgb(255, 255, 255);
       font-size: 1.4em;
       margin-top: -1vh;
-     margin: 0 auto;
-     max-width: 50vw;
+     /* margin: 0 auto;
+     max-width: 50vw; */
      font-family: sans-serif;
       
       
     }
   
     #scatter-plot {
-      margin-top: 4vh;
+      margin-top: -70vh;
+      margin-right: -2vw;
+      float: right;
+      width: 80%;
+      /* padding: 0 20px; */
+      /* box-sizing: border-box; */
     }
     
     
@@ -608,13 +678,16 @@ section.section1 {
       stroke: #ffffff;
     }
     
-    .axis-label {
+    #axis-label {
       font-size: 2em;
       fill: #ffffff;
     }
     
     .title {
       font-size: 2em;
+      text-align: center;
+      position: absolute;
+      margin-right: 2vw;
       fill: #ffffff;
     }
 
@@ -677,7 +750,7 @@ section.section1 {
 
       #section2 {
 
-        margin-top: 6vh;
+       
   
         color: rgb(255, 255, 255);
         text-align: center;
@@ -685,16 +758,17 @@ section.section1 {
         overflow-x: hidden;
       
       }
+
+      #section2 article{
+        float: right;
+        width: 40%;
+        padding: 0 40px;
+        /* box-sizing: border-box; */
+        margin-top: 10vh;
+      }
+    
       
-        #section2 h1 {
-          /* display: inline-block;
-          /* text-align: center; */
-          margin-top: 15vh;
-          font-size: 3.5em;
-          color: #ffffff;
-          /* max-width: 60vw;  */
-          
-        }
+        
         
       
         #section2 h2{
@@ -710,15 +784,18 @@ section.section1 {
           color: rgb(255, 255, 255);
           font-size: 1.4em;
           margin-top: -1vh;
-         margin: 0 auto;
-         max-width: 50vw;
+         /* margin: 0 auto;
+         max-width: 50vw; */
          font-family: sans-serif;
           
           
         }
       
         #histogram {
-          margin-top: 12vh;
+          margin-top: 0vh;
+          margin-left: -20vw;
+      float: left;
+      width: 40%;
         }
         
         
@@ -751,3 +828,96 @@ section.section1 {
           font-size: 2em;
           fill: #ffffff;
         }
+
+
+
+
+
+      #section3 {
+
+       
+  
+        color: rgb(255, 255, 255);
+        text-align: center;
+        /* width: 100%; */
+        overflow-x: hidden;
+      
+      }
+
+      #section3 article{
+        float: left;
+        width: 40%;
+        padding: 0 20px;
+        /* box-sizing: border-box; */
+        margin-top: 19vh;
+      }
+    
+      
+        
+        
+      
+        #section3 h2{
+         
+    
+          color: rgb(115, 112, 112);
+         font-size: 1.8em;
+          margin-top: 2vh;
+          
+        }
+      
+        #section3 p{
+          color: rgb(255, 255, 255);
+          font-size: 1.4em;
+          margin-top: -1vh;
+         /* margin: 0 auto;
+         max-width: 50vw; */
+         font-family: sans-serif;
+          
+          
+        }
+      
+        #bubblechart {
+          margin-top: -75vh;
+          margin-right: 30vw;
+      float: right;
+      width: 40%;
+        }
+        
+        .tooltip {
+          position: absolute;
+       cursor: pointer;
+          
+        }
+        
+        image{
+          
+            
+            opacity: 0.95;
+          
+        }
+
+        text {
+          font-family: sans-serif;
+        }
+        
+        .tick text {
+          font-size: 1.5em;
+          fill: #ffffff;
+        }
+        
+        .tick line {
+          stroke: #ffffff;
+        }
+        
+        .axis-label {
+          font-size: 1.3em;
+          fill: #ffffff;
+        }
+        
+        .title {
+          font-size: 2em;
+          fill: #ffffff;
+        }
+
+
+        

@@ -59,3 +59,20 @@ navLinks.forEach((link) => {
   });
 });
 
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+   // Get the current URL of the page
+var currentUrl = window.location.href;
+
+// Get all the navigation links
+var navLinks = document.querySelectorAll('nav ul li a');
+
+// Loop through each link and add the 'active' class to the link with a matching href attribute
+navLinks.forEach(function(link) {
+    if(link.href === currentUrl) {
+        link.classList.add('active');
+    }
+});
+
+});

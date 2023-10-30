@@ -46,9 +46,10 @@ body.index-page {
   
   
   /* Main Styling Data-Art Page */
-  body.portfolio-page {
-    background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
+  body.data-art-page {
+    background: url(./Images/pexels-aleksandar-pasaric-1694000.jpg) no-repeat;
     background-size: cover;
+   
     min-height: 100vh;
     max-width: 100%;
     margin: 0;
@@ -609,7 +610,7 @@ main.index-page-main {
 
   #section1 article{
     float: left;
-    width: 40%;
+    width: 35%;
     padding: 0 20px;
     /* box-sizing: border-box; */
     margin-top: 16vh;
@@ -620,7 +621,7 @@ main.index-page-main {
      #section1 h1 {
       /* display: inline-block;
       /* text-align: center; */
-      margin-top: 15vh;
+      margin-top: 10vh;
       font-size: 3.5em;
       color: #ffffff;
       /* max-width: 60vw;  */
@@ -632,17 +633,19 @@ main.index-page-main {
      
 
       color: rgb(115, 112, 112);
-      font-size: 1.8em;
+      font-size: 1.7em;
       margin-top: -4vh;
       
     }
   
     #section1 p{
       color: rgb(255, 255, 255);
-      font-size: 1.4em;
+      font-size: 1.2em;
       margin-top: -1vh;
+      /* margin-left: 18px; */
      /* margin: 0 auto;
      max-width: 50vw; */
+     /* max-width: 35vw; */
      font-family: sans-serif;
       
       
@@ -761,7 +764,7 @@ main.index-page-main {
 
       #section2 article{
         float: right;
-        width: 40%;
+        width: 35%;
         padding: 0 40px;
         /* box-sizing: border-box; */
         margin-top: 10vh;
@@ -775,15 +778,15 @@ main.index-page-main {
          
     
           color: rgb(115, 112, 112);
-         font-size: 1.8em;
-          margin-top: 2vh;
+         font-size: 1.7em;
+          margin-top: 4vh;
           
         }
       
         #section2 p{
           color: rgb(255, 255, 255);
-          font-size: 1.4em;
-          margin-top: -1vh;
+          font-size: 1.2em;
+          margin-top: 5vh;
          /* margin: 0 auto;
          max-width: 50vw; */
          font-family: sans-serif;
@@ -846,7 +849,7 @@ main.index-page-main {
 
       #section3 article{
         float: left;
-        width: 40%;
+        width: 35%;
         padding: 0 20px;
         /* box-sizing: border-box; */
         margin-top: 19vh;
@@ -860,14 +863,14 @@ main.index-page-main {
          
     
           color: rgb(115, 112, 112);
-         font-size: 1.8em;
+         font-size: 1.7em;
           margin-top: 2vh;
           
         }
       
         #section3 p{
           color: rgb(255, 255, 255);
-          font-size: 1.4em;
+          font-size: 1.2em;
           margin-top: -1vh;
          /* margin: 0 auto;
          max-width: 50vw; */
@@ -921,3 +924,99 @@ main.index-page-main {
 
 
         
+        /* data-art page */
+
+
+        #bubbles-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      
+        }
+
+        #svg-container{
+          
+          width: 100%;
+          max-width: 1400px;
+          height: 800px;
+       
+          display: flex;
+          justify-content: center;
+        }
+
+        #data-art-h1 {
+          /* display: inline-block;
+          /* text-align: center; */
+          margin-top: 10vh;
+          font-size: 3.5em;
+          color: #ffffff;
+          text-align: center;
+          text-decoration: underline;
+
+          /* max-width: 60vw;  */
+          
+        }
+        
+      
+    
+      
+        #data-art-p{
+          color: rgb(255, 255, 255);
+          font-size: 1.4em;
+          margin-top: -1vh;
+          /* transform: translateX(40%); */
+          /* left: 50%; */
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          max-width: 55vw;
+         /* margin: 0 auto;
+         max-width: 50vw; */
+         font-family: sans-serif;
+         
+
+          
+        }
+
+        .tooltip2 {
+          position: absolute;
+          background-color: white;
+          border-radius: 5px;
+          padding: 10px;
+          color: black;
+          opacity: 0;
+      }
+
+      #particle-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    .particle {
+        position: absolute;
+        background-color: #ffffff; /* Color of particles */
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: particle-animation linear infinite;
+    }
+    
+    @keyframes particle-animation {
+        0% {
+            transform: translateY(0) translateX(0) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-200vh) translateX(200vw) scale(0);
+            opacity: 0;
+        }
+    }
+    

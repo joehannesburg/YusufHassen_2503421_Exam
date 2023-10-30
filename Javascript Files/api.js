@@ -1,15 +1,7 @@
 (function (d3) {
     'use strict';
 
-//     const containerWidth = document.getElementById('svg1').clientWidth;
-// const containerHeight = document.getElementById('svg1').clientHeight;
 
-// const svgWidth = containerWidth;
-// const svgHeight = containerHeight;
-
-
-
-  
   const svgWidth = 1000; 
   const svgHeight = 700;
 
@@ -30,7 +22,7 @@
       const imageSize = 30;
       const yAxisLabel = 'Distance from Earth (kilometers)';
   
-      const margin = { top: 80, right: 20, bottom: 80, left: 400 };
+      const margin = { top: 100, right: 20, bottom: 80, left: 400 };
       const innerWidth = width - margin.left - margin.right;
       const innerHeight = height - margin.top - margin.bottom;
   
@@ -86,7 +78,7 @@
         .attr('width', imageSize)
         .attr('height', imageSize)
         .style("opacity", 0.8)
-        .attr('xlink:href' ,'./Images/pngwing.com (1).png');
+        .attr('xlink:href' ,'../Images/pngwing.com (1).png');
 
       g.append('text')
         .attr('class', 'title')
@@ -99,22 +91,6 @@
 
     
   
-//     fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=bJPqEWO96h6ZUyZIgrkCv5NQ2fevLHQzOcCpguV4')
-//     .then(response => response.json())
-//     .then(data => {
-//       // Extracting the relevant asteroid data from the API response
-//       const asteroids = data.near_earth_objects.map(asteroid => ({
-//         estimated_diameter: asteroid.estimated_diameter,
-//         close_approach_data: asteroid.close_approach_data,
-//       }));
-  
-//         render(asteroids);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching data from the NASA API:', error);
-//       });
-  
-//   }(d3));
 
 
   
@@ -307,11 +283,7 @@ var margin = { top: 30, right: 20, bottom: 80, left: 400 },
 width = 1000 - margin.left - margin.right,
 height = 700 - margin.top - margin.bottom;
 
-// const containerWidth = document.getElementById('svg3').clientWidth;
-// const containerHeight = document.getElementById('svg3').clientHeight;
 
-// const svgWidth = containerWidth;
-// const svgHeight = containerHeight;
 
 // append the svg object to the body of the page
 var svg = d3.select("#svg3")
@@ -322,15 +294,7 @@ var svg = d3.select("#svg3")
 .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
 
-// // Create a tooltip div element
-// var tooltip = d3.select("#bubblechart")
-//     .append("div")
-//     .style("opacity", 0)
-//     .attr("class", "tooltip")
-//     .style("background-color", "white")
-//     .style("border-radius", "50px")
-//     .style("padding", "10px")
-//     .style("color", "red");
+
 
 const fetchData = (startDate, endDate, apiKey) => {
   const baseUrl = 'https://api.nasa.gov/neo/rest/v1/feed';
@@ -399,7 +363,6 @@ svg.append("text")
 .attr("y", -margin.top + 30) // Adjust the position based on your design
 .text("Asteroids: Size vs speed vs Distance");
 
-// ... (rest of your code)
 
 
     // Add a scale for bubble size
@@ -450,10 +413,7 @@ var moveTooltip = function(event, d) {
       xPos = window.innerWidth - tooltipWidth - 10;
   }
   
-  // // Check if the tooltip goes beyond the bottom edge of the window
-  // if (yPos + tooltipHeight > window.innerHeight) {
-  //     yPos = window.innerHeight - tooltipHeight - 10;
-  // }
+
 
   tooltip.style("left", xPos + "px")
          .style("top", yPos + "px");
@@ -485,24 +445,7 @@ tooltip
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
         
-// // Add tooltip event listeners
-// .on("mouseover", function (event, d) {
-//   tooltip.transition()
-//       .duration(200)
-//       .style("opacity", 1);
-//   tooltip.html("Asteroid Name: " + d.name)
-//       .style("left", (event.pageX + 10) + "px")
-//       .style("top", (event.pageY - 20) + "px");
-// })
-// .on("mousemove", function (event) {
-//   tooltip.style("left", (event.pageX + 10) + "px")
-//       .style("top", (event.pageY - 20) + "px");
-// })
-// .on("mouseleave", function () {
-//   tooltip.transition()
-//       .duration(200)
-//       .style("opacity", 0);
-//   });
+
 
 })
 
@@ -524,3 +467,6 @@ const apiKey = 'bJPqEWO96h6ZUyZIgrkCv5NQ2fevLHQzOcCpguV4';
 // Call fetchData function with specified parameters
 fetchData(startDate, endDate, apiKey);
     
+
+
+

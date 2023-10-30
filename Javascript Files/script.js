@@ -76,3 +76,24 @@ navLinks.forEach(function(link) {
 });
 
 });
+
+
+//particle
+
+// Particle effect
+var particleContainer = document.getElementById('particle-container');
+
+function createParticle() {
+    var particle = document.createElement('div');
+    particle.className = 'particle';
+    var randomX = Math.random() * window.innerWidth;
+    var randomY = Math.random() * window.innerHeight;
+    particle.style.left = randomX + 'px';
+    particle.style.top = randomY + 'px';
+    particleContainer.appendChild(particle);
+    setTimeout(function() {
+        particle.remove();
+    }, 2000); // Remove particle after 3 seconds
+}
+
+setInterval(createParticle, 100);

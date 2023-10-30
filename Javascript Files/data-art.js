@@ -16,6 +16,11 @@
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
     
+
+
+        // Show Loading message
+        document.getElementById('loading-message').style.display = 'block';
+
     // Fetch Data
     const fetchData = (startDate, endDate, apiKey) => {
       const baseUrl = 'https://api.nasa.gov/neo/rest/v1/feed';
@@ -184,6 +189,9 @@ function createParticle() {
 }
 
 setInterval(createParticle, 100);
+
+document.getElementById('loading-message').style.display = 'none';
+
     
     })
     
@@ -191,6 +199,10 @@ setInterval(createParticle, 100);
     
             .catch(error => {
                 console.error('Error fetching data from the NASA API:', error);
+
+
+                document.getElementById('loading-message').style.display = 'none';
+
             });
           
     

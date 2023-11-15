@@ -928,11 +928,13 @@ main.index-page-main {
 
 
         #bubbles-container {
-          width: 100%;
+          width: 80%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          /* margin-left: auto;
+          margin-right: auto; */
       
         }
 
@@ -944,6 +946,45 @@ main.index-page-main {
        
           display: flex;
           justify-content: center;
+        }
+
+        #exam-bubbles {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          /* margin-left: auto;
+          margin-right: auto; */
+
+        }
+        @keyframes rotate {
+          0% {
+              transform: rotate(0deg);
+          }
+      
+          100% {
+              transform: rotate(360deg);
+          }
+        /* .bubbless{
+          animation: rotate 10s linear infinite;
+            transform-origin: center center; /* Set the transform origin to the center */
+
+        
+
+} 
+
+
+        #exam-svg{
+          
+          width: 100%;
+          max-width: 1400px;
+          height: 900px;
+       margin-top: 5vh;
+          display: flex;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         #data-art-h1 {
@@ -959,7 +1000,18 @@ main.index-page-main {
           
         }
         
-      
+        #data-art-h2 {
+          /* display: inline-block;
+          /* text-align: center; */
+          margin-top: 10vh;
+          font-size: 3.5em;
+          color: #ffffff;
+          text-align: center;
+          text-decoration: underline;
+
+          /* max-width: 60vw;  */
+          
+        }
     
       
         #data-art-p{
@@ -988,6 +1040,14 @@ main.index-page-main {
           color: black;
           opacity: 0;
       }
+      .tooltip3 {
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        color: black;
+        opacity: 0;
+    }
 
       #particle-container {
         position: fixed;
@@ -1035,3 +1095,19 @@ main.index-page-main {
       color: red;
   }
   
+  #error-message {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    /* width: 100%; */
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: x-large;
+    display: none;
+    color: red;
+}
+
+
